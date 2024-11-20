@@ -1,0 +1,16 @@
+{
+  "name": "@khalidhossainakash/int-lib-poc",
+  "version": "0.0.1",
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "nest build",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "start": "nest start",
+    "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
+    "test": "jest"
+  },
+  "dependencies": {  
+  },
+  "devDependencies": {
+  }
+}
