@@ -1,5 +1,5 @@
 {
-  "name": "@khalidhossainakash/int-lib-poc",
+  "name": "@khalidhossainakash/int-lib-poc-logger",
   "version": "0.0.1",
   "scripts": {
     "prebuild": "rimraf dist",
