@@ -1,6 +1,6 @@
 {
   "name": "@khalidhossainakash/int-lib-poc-logger",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -8,9 +8,5 @@
     "start": "nest start",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest"
-  },
-  "dependencies": {  
-  },
-  "devDependencies": {
   }
 }
