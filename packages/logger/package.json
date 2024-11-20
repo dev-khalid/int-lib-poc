@@ -1,9 +1,19 @@
 {
   "name": "@khalidhossainakash/int-lib-poc-logger",
   "version": "1.0.3",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-khalid/int-lib-poc.git"
+  },
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf ./dist",
     "build": "nest build",
+    "prepare": "npm run prebuild && npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",

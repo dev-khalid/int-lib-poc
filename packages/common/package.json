@@ -1,9 +1,23 @@
 {
   "name": "@khalidhossainakash/int-lib-poc-common",
-  "version": "1.0.3",
+  "version": "1.1.4",
+  "description": "Common library for integration library PoC",
+  "license": "MIT",
+  "author": "Khalid Hossain <khalidhossain@gmail.com>",
+  "homepage": "https://github.com/dev-khalid/int-lib-poc#readme",
+  "main": "./dist/main.js",
+  "types": "./dist/main.d.ts",
+  "files": [
+    "dist/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-khalid/int-lib-poc.git"
+  },
   "scripts": {
-    "prebuild": "rimraf dist",
+    "prebuild": "rimraf ./dist",
     "build": "nest build",
+    "prepare": "npm run prebuild && npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
